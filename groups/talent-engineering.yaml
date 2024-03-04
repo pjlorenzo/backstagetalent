@@ -1,0 +1,73 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: talent-engineering
+  description: Team A
+spec:
+  type: team
+  profile:
+    # Intentional no displayName for testing
+    email: team-a@example.com
+    picture: https://api.dicebear.com/7.x/identicon/svg?seed=Fluffy&backgroundType=solid,gradientLinear&backgroundColor=ffd5dc,b6e3f4
+  parent: backstage
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: richard.parkins
+spec:
+  profile:
+    # Intentional no displayName for testing
+    email: richard.parkins@talentconsulting.uk
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
+  memberOf: [talent-engineeringa]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: alasdair.reid
+spec:
+  profile:
+    displayName: Alasdair Reid
+    email: alasdair.reid@talentconsulting.uk
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Leo&backgroundColor=transparent
+  memberOf: [talent-engineering]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: michael.valchera
+spec:
+  profile:
+    displayName: Michael Valchera
+    email: michael.valchera@talentconsulting.uk
+    picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Midnight&backgroundColor=transparent
+  memberOf: [talent-engineering]
+---
+# This user is added as an example, to make it more easy for the "Guest"
+# sign-in option to demonstrate some entities being owned. In a regular org,
+# a guest user would probably not be registered like this.
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guest
+spec:
+  profile:
+    displayName: Guest User
+    email: guest@example.com
+  memberOf: [talent-engineering]
+---
+# This user is added as an example, to make it more easy for the "Guest"
+# sign-in option to demonstrate some entities being owned. In a regular org,
+# a guest user would probably not be registered like this.
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guest
+  namespace: development
+spec:
+  profile:
+    displayName: Guest User
+    email: guest@example.com
+  memberOf: [group:default/talent-engineering]
