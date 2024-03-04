@@ -21,7 +21,7 @@ spec:
     # Intentional no displayName for testing
     email: richard.parkins@talentconsulting.uk
     picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
-  memberOf: [talent-engineeringa]
+  memberOf: [talent-engineering]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
