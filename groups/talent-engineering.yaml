@@ -1,8 +1,8 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: talent-engineering
-  description: Team A
+  name: talentengineering
+  description: Talent Enginnering
 spec:
   type: team
   profile:
@@ -21,7 +21,7 @@ spec:
     # Intentional no displayName for testing
     email: richard.parkins@talentconsulting.uk
     picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Luna&backgroundColor=transparent
-  memberOf: [talent-engineering]
+  memberOf: [talentengineering]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -32,7 +32,7 @@ spec:
     displayName: Alasdair Reid
     email: alasdair.reid@talentconsulting.uk
     picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Leo&backgroundColor=transparent
-  memberOf: [talent-engineering]
+  memberOf: [talentengineering]
 ---
 apiVersion: backstage.io/v1alpha1
 kind: User
@@ -43,4 +43,4 @@ spec:
     displayName: Michael Valchera
     email: michael.valchera@talentconsulting.uk
     picture: https://api.dicebear.com/7.x/avataaars/svg?seed=Midnight&backgroundColor=transparent
-  memberOf: [talent-engineering]
+  memberOf: [talentengineering]
