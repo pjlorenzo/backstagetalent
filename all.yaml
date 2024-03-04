@@ -10,4 +10,5 @@ spec:
     # - ./all-domains.yaml
     # - ./all-resources.yaml
     # - ./all-groups.yaml
+    - ./org.yaml
     - ./all-systems.yaml
