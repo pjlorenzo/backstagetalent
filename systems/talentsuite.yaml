@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: talentsuite
+  description: Talent Suite
+spec:
+  owner: talent-engineering
+  domain: projects
